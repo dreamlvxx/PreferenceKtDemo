@@ -6,8 +6,13 @@
         app:key="notifications_category"
         app:title="Sync">
 
+        <EditTextPreference
+            app:key="counting"
+            app:title="Counting preference"/>
+
         <SwitchPreferenceCompat
             app:key="notifications"
+            app:defaultValue="lvxingxing"
             app:title="Sync message"/>
 
         <Preference
