@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
         app:key="notifications_category"
@@ -13,7 +13,17 @@
         <Preference
             app:key="sss"
             app:summary="One summary"
-            app:title="One title---"/>
+            app:title="GO TO SActivity---">
+
+            <intent android:targetClass="com.dream.preferencektdemo.SActivity"
+                android:targetPackage="com.dream.preferencektdemo"/>
+
+        </Preference>
+
+        <Preference
+            android:defaultValue="sd"
+            app:key="clickpre"
+            android:title="Click Preferences"/>
 
     </PreferenceCategory>
 
